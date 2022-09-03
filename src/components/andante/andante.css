@@ -1,0 +1,54 @@
+#Mm-andante {
+  width: 100%;
+  background-color: #272726;
+  padding-top: 22px;
+  text-align: center;
+  position: relative;
+  margin-top: 37px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.221099);
+}
+#Mm-andante .Mm-andante-andante {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#Mm-andante .Mm-andante-andante .Mm-andante-andante-number {
+  font-family: "Avenir Roman";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.246039);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+#Mm-andante .Mm-andante-andante .Mm-andante-andante-text {
+  font-family: "Avenir Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin: 0;
+}
+#Mm-andante .Mm-andante-andante-quarter {
+  position: absolute;
+  right: 0;
+  top: 11px;
+}
+#Mm-andante .Mm-andante-andante-quarter .Mm-andante-andante-quarternumber {
+  font-family: "Avenir Roman";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFFFFF;
+  margin: 0;
+}
+#Mm-andante img {
+  width: 100%;
+  max-width: 229px;
+  height: auto;
+}

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import { Header } from './components/header/header';
+import { Keyboard } from './components/keyboard/keyboard'
+import { Player } from './components/player/player'
+import { Instruments } from './components/instruments/instruments'
+import { Andante } from './components/andante/andante'
+import { Control } from './components/control/control'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="Mm-layout">
+        <div className="MM-layout-header">
+            <Header/>
+        </div>
+        <div className="MM-layout-board-player">
+            <div>
+                <Keyboard>
+                    <Control/> 
+                </Keyboard>
+            </div>
+            <div>
+                <Player/>
+            </div>
+        </div>
+        <div className="MM-layout-right">
+            <div>
+                <Instruments/>
+            </div>
+            <div>
+                <Andante/>
+            </div>
+        </div>
     </div>
   );
 }

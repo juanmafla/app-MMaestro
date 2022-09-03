@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(normalize.css);
+@font-face {
+  font-family: "Avenir Black";
+  src: url("./fonts/avenir_black.eot?#iefix") format("embedded-opentype"), url("./fonts/avenir_black.woff2") format("woff2"), url("./fonts/avenir_black.ttf") format("truetype");
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Avenir Book";
+  src: url("./fonts/avenir_book.eot?#iefix") format("embedded-opentype"), url("./fonts/avenir_book.woff2") format("woff2"), url("./fonts/avenir_book.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("./fonts/avenir_heavy.eot?#iefix") format("embedded-opentype"), url("./fonts/avenir_heavy.woff2") format("woff2"), url("./fonts/avenir_heavy.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir Light";
+  src: url("./fonts/avenir_light.eot?#iefix") format("embedded-opentype"), url("./fonts/avenir_light.woff2") format("woff2"), url("./fonts/avenir_light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir Medium";
+  src: url("./fonts/avenir_medium.eot?#iefix") format("embedded-opentype"), url("./fonts/avenir_medium.woff2") format("woff2"), url("./fonts/avenir_medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Avenir Roman";
+  src: url("./fonts/avenir_roman.eot?#iefix") format("embedded-opentype"), url("./fonts/avenir_roman.woff2") format("woff2"), url("./fonts/avenir_roman.ttf") format("truetype");
 }

@@ -1,0 +1,251 @@
+#MM-maestro-keyboard
+    background-color: #272726
+    overflow: hidden
+    display: grid
+    grid-template-columns: 1fr 50px
+
+    .MM-maestro-keyboard-main
+        
+        .MM-maestro-keyboard-main-wrapper
+            overflow: hidden
+
+        .MM-maestro-keyboard-main-rule
+            width: 100%
+            background-color: #49453E
+            width: 100%
+            height: 13px
+            display: grid
+            grid-template-columns: 18px 1fr 18px 1fr 18px 1fr 18px
+            font-family: 'Avenir Roman'
+            font-style: normal
+            font-weight: 500
+            font-size: 9px
+            line-height: 9px
+            text-align: center
+            color: rgba(255, 255, 255, 0.7)
+            align-content: center
+            position: relative
+
+            .MM-maestro-keyboard-main-rule-linemarker
+                position: absolute
+                left: 0
+                width: 100%
+                top: 0
+                text-align: center
+
+                .MM-maestro-keyboard-main-rule-linemarker-tmarker
+                    margin-top: -7px
+
+                .MM-maestro-keyboard-main-rule-linemarker-line
+                    background-color:  #C4BC84
+                    width: 1px
+                    height: 100vw
+                    position: absolute
+                    left: 50%
+                    top: 0px
+            
+
+            .MM-maestro-keyboard-main-rule-lines
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr 1fr
+                padding-top: 2px
+                padding-bottom: 2px                
+
+                div 
+                    border-right: 1px solid #ffffff38
+
+            .MM-maestro-keyboard-main-rule-marker
+                background-color: #7D6B52
+                border: none
+                padding: 1px
+
+        .MM-maestro-keyboard-main-board
+            display: grid
+            grid-template-columns: auto 1fr
+            border-bottom: 1px solid #ffffff1f
+
+            .MM-maestro-keyboard-main-board-key
+                img
+                    display: block
+
+            .MM-maestro-keyboard-main-board-lines
+                background-image: url('./img/lines.svg')
+                position: relative
+                overflow-x: hidden
+                background-size: auto 100%
+
+                .MM-maestro-keyboard-main-board-lines-notes
+                    width: 100%
+                    height: 8px
+                    max-width: 69px
+                    background-color: #fff
+                    border-radius: 8px
+                    position: absolute
+                    left: 89.33px
+                    top: 179px
+
+        .MM-maestro-keyboard-main-chart
+            margin-top: 33px
+
+            .MM-maestro-keyboard-main-chart-controls
+                display: grid
+                grid-template-columns: auto auto auto
+                column-gap: 30px
+                justify-content: end
+                align-items: center
+
+                .MM-maestro-keyboard-main-chart-control-ex
+                    display: grid
+                    grid-template-columns: 15px auto
+                    column-gap: 5px
+
+                    p
+                        margin: 0
+                        font-family:  'Avenir Roman'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 10px
+                        line-height: 14px
+                        color: #FAFAFF
+                        opacity: 0.56
+
+
+                .MM-maestro-keyboard-main-chart-control-tem
+                    display: grid
+                    grid-template-columns: 15px auto
+                    column-gap: 5px
+
+                    p
+                        margin: 0
+                        font-family:  'Avenir Roman'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 10px
+                        line-height: 14px
+                        color: #FAFAFF
+                        opacity: 0.56
+
+                .MM-maestro-keyboard-main-chart-control-btn
+                    button
+                        background: #C8AEEC
+                        border-radius: 4px
+                        font-family: 'Avenir Roman'
+                        font-style: normal
+                        font-weight: 800
+                        font-size: 6px
+                        line-height: 8px
+                        text-align: center
+                        text-transform: uppercase
+                        color: rgba(255, 255, 255, 0.7)
+                        padding: 7px
+                        width:  71px
+                        border: none
+
+            .MM-maestro-keyboard-main-chart-chart
+
+        .MM-maestro-keyboard-main-control-range
+            padding-left: 40px
+            padding-right: 40px
+            padding-top: 25px
+            padding-bottom: 25px
+
+            input[type=range] 
+                height: 12px
+                -webkit-appearance: none
+                margin: 10px 0
+                width: 100%
+                background: transparent
+                //accent-color: linear-gradient(90deg, #6D64A6 0%, #F48272 100%)
+                border: none
+                    
+            input[type=range]:focus 
+                outline: none
+                
+            input[type=range]::-webkit-slider-runnable-track
+                width: 100%
+                height: 4px
+                cursor: pointer
+                animate: 0.2s
+                box-shadow: 0px 0px 0px #000000
+                background: rgba(249, 249, 249, 0.15)
+                border-radius: 50px
+                border: none
+                
+            input[type=range]::-webkit-slider-thumb 
+                box-shadow: 0px 0px 0px #FFFFFF
+                border: none
+                height: 16px
+                width: 16px
+                border-radius: 15px
+                background: #FFFFFF
+                cursor: pointer
+                -webkit-appearance: none
+                margin-top: -6px
+                
+            input[type=range]:focus::-webkit-slider-runnable-track
+                background: rgba(249, 249, 249, 0.15)
+                    
+            input[type=range]::-moz-range-track 
+                width: 100%
+                height: 4px
+                cursor: pointer
+                animate: 0.2s
+                box-shadow: 0px 0px 0px #000000
+                background: #DEDEDE
+                border-radius: 50px
+                border: 0px solid #010101
+                
+            input[type=range]::-moz-range-thumb 
+                box-shadow: 0px 0px 0px #FFFFFF
+                border: 0px solid #FFFFFF
+                height: 6px
+                width: 6px
+                border-radius: 15px
+                background: #FFFFFF
+                cursor: pointer
+                    
+            input[type=range]::-ms-track
+                width: 100%
+                height: 4px
+                cursor: pointer
+                animate: 0.2s
+                background: transparent
+                border-color: transparent
+                color: transparent
+                    
+            input[type=range]::-ms-fill-lower
+                background: #DEDEDE
+                border: 0px solid #010101
+                border-radius: 100px
+                box-shadow: 0px 0px 0px #000000
+                    
+            input[type=range]::-ms-fill-upper
+                background: #DEDEDE
+                border: 0px solid #010101
+                border-radius: 100px
+                box-shadow: 0px 0px 0px #000000
+                    
+            input[type=range]::-ms-thumb
+                margin-top: 1px
+                box-shadow: 0px 0px 0px #FFFFFF
+                border: 0px solid #FFFFFF
+                height: 6px
+                width: 6px
+                border-radius: 15px
+                background: #FFFFFF
+                cursor: pointer
+                    
+            input[type=range]:focus::-ms-fill-lower
+                background: #DEDEDE
+                    
+            input[type=range]:focus::-ms-fill-upper
+                background: #DEDEDE
+
+    .MM-maestro-keyboard-controls
+        display: grid
+        grid-template-columns: auto
+        grid-template-rows: 1fr 1fr
+        row-gap: 37px
+        
+
+        .MM-maestro-keyboard-controls-control1

@@ -1,0 +1,242 @@
+#MM-header {
+  margin: 0;
+  padding: 0;
+  background: #1A1F29;
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.294061);
+}
+#MM-header .MM-header-grid {
+  display: grid;
+  grid-template-columns: 121px 1fr 371px 137px 40px;
+  align-content: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+@media (max-width: 1100px) {
+  #MM-header .MM-header-grid {
+    grid-template-columns: 1fr 1fr auto;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 700px) {
+  #MM-header .MM-header-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#MM-header .MM-header-grid .MM-header-grid-col1 {
+  justify-self: left;
+  display: grid;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  #MM-header .MM-header-grid .MM-header-grid-col1 {
+    grid-column: span 2;
+  }
+}
+#MM-header .MM-header-grid .MM-header-grid-col1 h1 {
+  font-family: "Avenir Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  text-align: left;
+}
+#MM-header .MM-header-grid .MM-header-grid-col2 {
+  border-right: 1px solid rgba(255, 251, 251, 0.1);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+@media (max-width: 1100px) {
+  #MM-header .MM-header-grid .MM-header-grid-col2 {
+    grid-column: span 2;
+    border-right: none;
+  }
+}
+@media (max-width: 700px) {
+  #MM-header .MM-header-grid .MM-header-grid-col2 {
+    grid-column: span 2;
+  }
+}
+#MM-header .MM-header-grid .MM-header-grid-col2 p {
+  margin: 0;
+  font-family: "Avenir Heavy";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 40px 74px 74px 74px;
+  column-gap: 28px;
+  border-right: 1px solid rgba(255, 251, 251, 0.1);
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+@media (max-width: 1100px) {
+  #MM-header .MM-header-grid .MM-header-grid-col3 {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 700px) {
+  #MM-header .MM-header-grid .MM-header-grid-col3 {
+    grid-column: span 2;
+    justify-content: center;
+    border-right: none;
+    grid-template-columns: auto auto;
+  }
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 ul {
+  font-family: "Avenir Roman";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 9px;
+  text-align: center;
+  color: #FFFFFF;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 ul li {
+  display: none;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 ul li.active {
+  display: inline-block;
+  position: relative;
+  margin-left: -12px;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 ul li.active::after {
+  content: "";
+  background-image: url("./img/Sort_Down.svg");
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: -20px;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 p {
+  font-family: "Avenir Black";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 9px;
+  line-height: 9px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range] {
+  width: 100%;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range] {
+  height: 12px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  background: transparent;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]:focus {
+  outline: none;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: rgba(249, 249, 249, 0.15);
+  border-radius: 50px;
+  border: 0px solid #010101;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border: 0px solid #FFFFFF;
+  height: 7px;
+  width: 7px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -1px;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(249, 249, 249, 0.15);
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #DEDEDE;
+  border-radius: 50px;
+  border: 0px solid #010101;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border: 0px solid #FFFFFF;
+  height: 6px;
+  width: 6px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]::-ms-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]::-ms-fill-lower {
+  background: #DEDEDE;
+  border: 0px solid #010101;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]::-ms-fill-upper {
+  background: #DEDEDE;
+  border: 0px solid #010101;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border: 0px solid #FFFFFF;
+  height: 6px;
+  width: 6px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]:focus::-ms-fill-lower {
+  background: #DEDEDE;
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 input[type=range]:focus::-ms-fill-upper {
+  background: #DEDEDE;
+}
+#MM-header .MM-header-grid .MM-header-grid-col4 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+#MM-header .MM-header-grid .MM-header-grid-col5 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}

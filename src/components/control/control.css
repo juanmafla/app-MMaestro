@@ -1,0 +1,114 @@
+.MM-maestro-control {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 220px 1fr 1fr;
+  row-gap: 25px;
+  justify-content: center;
+  margin-top: 22px;
+}
+.MM-maestro-control button {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+.MM-maestro-control button img {
+  display: block;
+}
+.MM-maestro-control .MM-maestro-control-range {
+  position: relative;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range] {
+  height: 220px;
+  -webkit-appearance: none;
+  width: 220px;
+  background: transparent;
+  transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  margin-left: -97px;
+  position: absolute;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]:focus {
+  outline: none;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: rgba(249, 249, 249, 0.15);
+  border-radius: 50px;
+  border: 0px solid #010101;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border: 0px solid #FFFFFF;
+  height: 10px;
+  width: 10px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3px;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(249, 249, 249, 0.15);
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #DEDEDE;
+  border-radius: 50px;
+  border: 0px solid #010101;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border: 0px solid #FFFFFF;
+  height: 6px;
+  width: 6px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]::-ms-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]::-ms-fill-lower {
+  background: #DEDEDE;
+  border: 0px solid #010101;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]::-ms-fill-upper {
+  background: #DEDEDE;
+  border: 0px solid #010101;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border: 0px solid #FFFFFF;
+  height: 6px;
+  width: 6px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]:focus::-ms-fill-lower {
+  background: #DEDEDE;
+}
+.MM-maestro-control .MM-maestro-control-range input[type=range]:focus::-ms-fill-upper {
+  background: #DEDEDE;
+}

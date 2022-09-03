@@ -1,0 +1,101 @@
+#Mm-player
+    background-color: #272726
+    color: #FFFFFF
+    display: grid
+    grid-template-columns: auto 442px auto
+    column-gap: 15px
+
+    @media (max-width: 700px)
+        grid-template-columns: auto auto
+
+    @media (max-width: 585px)
+        grid-template-columns: auto
+
+    .Mm-player-col1
+        font-family: "Avenir Roman"
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 9px
+        text-align: center
+        letter-spacing: 2.5px
+        color: #ffffffa3
+        display: grid
+        align-content: center
+        justify-content: center
+
+        @media (max-width: 700px)
+            grid-column: span 2
+
+        @media (max-width: 585px)
+            grid-column: span 1
+
+        p
+            margin: 0
+
+        .Mm-player-col1-m1
+            font-size: 20px
+            line-height: 9px
+            text-align: center
+            letter-spacing: 2.5px
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.207222)
+            padding-bottom: 10px
+            width: 118px
+
+            @media (max-width: 700px)
+                margin-top: 21px
+
+        .Mm-player-col1-m2
+            font-size: 12px
+            line-height: 9px
+            text-align: center
+            letter-spacing: 2.5px
+            margin-top: 10px
+
+            @media (max-width: 700px)
+                margin-bottom: 21px
+
+    .Mm-player-col2
+        background: rgba(255, 251, 251, 0.04)
+        padding-top: 28px
+        padding-bottom: 28px
+        display: grid
+        align-content: center
+        justify-content: center
+
+        ul
+            margin: 0
+            list-style: none
+            padding: 0
+            display: grid
+            grid-template-columns: auto auto auto auto auto auto
+            column-gap: 40px
+            align-items: center
+
+            li 
+                button
+                    background-color: transparent 
+                    border: none
+                    padding: 0
+                    margin: 0
+                    display: grid
+                    align-items: center
+
+                    img
+                        display: block
+                    
+
+    .Mm-player-col3
+        display: grid
+        align-content: center
+        justify-content: center
+
+        p
+            font-family: "Avenir Roman"
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 9px
+            letter-spacing: 6px
+            color: #ffffffa3
+            
