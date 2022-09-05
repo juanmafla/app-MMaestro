@@ -5,11 +5,14 @@
   text-align: center;
   position: relative;
   margin-top: 37px;
-  border-top: 0.5px solid rgba(255, 255, 255, 0.221099);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 #Mm-andante .Mm-andante-andante {
   position: absolute;
-  left: 0;
+  left: 35px;
   top: 0;
 }
 #Mm-andante .Mm-andante-andante .Mm-andante-andante-number {
@@ -35,7 +38,7 @@
 }
 #Mm-andante .Mm-andante-andante-quarter {
   position: absolute;
-  right: 0;
+  right: 35px;
   top: 11px;
 }
 #Mm-andante .Mm-andante-andante-quarter .Mm-andante-andante-quarternumber {

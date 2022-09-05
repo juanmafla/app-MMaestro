@@ -5,13 +5,13 @@ import chartright from './img/chart-right.svg'
 function Andante() {
     return (
         <div id="Mm-andante">
-            <div class="Mm-andante-andante">
-                <p class="Mm-andante-andante-number">100</p>
-                <p class="Mm-andante-andante-text">Andante</p>
+            <div className="Mm-andante-andante">
+                <p className="Mm-andante-andante-number">100</p>
+                <p className="Mm-andante-andante-text">Andante</p>
             </div>
 
-            <div class="Mm-andante-andante-quarter">
-                <p class="Mm-andante-andante-quarternumber">4/4</p>
+            <div className="Mm-andante-andante-quarter">
+                <p className="Mm-andante-andante-quarternumber">4/4</p>
             </div>
 
             <img src={chartright}  alt=""/>

@@ -23,10 +23,11 @@ function App() {
             </div>
         </div>
         <div className="MM-layout-right">
-            <div>
+            <div className="MM-layout-right-first">
                 <Instruments/>
             </div>
             <div>
+                <div className="MM-layout-right-lineh"></div>    
                 <Andante/>
             </div>
         </div>

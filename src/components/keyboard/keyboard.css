@@ -69,6 +69,7 @@
   position: relative;
   overflow-x: hidden;
   background-size: auto 100%;
+  cursor: pointer;
 }
 #MM-maestro-keyboard .MM-maestro-keyboard-main .MM-maestro-keyboard-main-board .MM-maestro-keyboard-main-board-lines .MM-maestro-keyboard-main-board-lines-notes {
   width: 100%;
@@ -134,6 +135,11 @@
   padding: 7px;
   width: 71px;
   border: none;
+}
+#MM-maestro-keyboard .MM-maestro-keyboard-main .MM-maestro-keyboard-main-chart .MM-maestro-keyboard-main-chart-chart {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 #MM-maestro-keyboard .MM-maestro-keyboard-main .MM-maestro-keyboard-main-control-range {
   padding-left: 40px;
