@@ -3,7 +3,13 @@ import './header.css'
 import Monitor from './img/Monitor.svg'
 import Setting from './img/Setting.svg'
 
+
+
 function Header() {
+    const [showResults, setShowResults] = React.useState(false);
+    const onClick = () => setShowResults(true);
+    const onMout = () => setShowResults(false);
+
     return (
         <header id="MM-header">
             <div className="MM-header-grid">
@@ -14,9 +20,9 @@ function Header() {
                     <p>Iberia Book 1 Evocation</p>
                 </div>
                 <div  className="MM-header-grid-col3">
-                    <div>
+                    <div className="MM-header-grid-col3-midi-menu">
                         <p>MIDI CH</p>
-                        <ul>
+                        <ul onClick={onClick} onMouseLeave={onMout} className={showResults? 'showit' : undefined}>
                             <li className="active">1</li>
                             <li>2</li>
                             <li>3</li>

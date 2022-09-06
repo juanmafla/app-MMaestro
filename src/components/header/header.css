@@ -97,6 +97,9 @@
     grid-template-columns: auto auto;
   }
 }
+#MM-header .MM-header-grid .MM-header-grid-col3 .MM-header-grid-col3-midi-menu {
+  position: relative;
+}
 #MM-header .MM-header-grid .MM-header-grid-col3 ul {
   font-family: "Avenir Roman";
   font-style: normal;
@@ -109,14 +112,33 @@
   margin: 0;
   padding: 0;
   margin-top: 10px;
+  cursor: pointer;
+  position: absolute;
+  left: 17px;
+  top: -1px;
+}
+@media (max-width: 700px) {
+  #MM-header .MM-header-grid .MM-header-grid-col3 ul {
+    left: 63px;
+  }
+}
+#MM-header .MM-header-grid .MM-header-grid-col3 ul.showit li {
+  display: block;
 }
 #MM-header .MM-header-grid .MM-header-grid-col3 ul li {
   display: none;
+  position: relative;
+  margin-left: -18px;
+  line-height: 15px;
+  background-color: #1A1F29;
+  width: 38px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 999;
 }
 #MM-header .MM-header-grid .MM-header-grid-col3 ul li.active {
   display: inline-block;
   position: relative;
-  margin-left: -12px;
 }
 #MM-header .MM-header-grid .MM-header-grid-col3 ul li.active::after {
   content: "";
@@ -124,7 +146,8 @@
   width: 17px;
   height: 17px;
   position: absolute;
-  right: -20px;
+  right: -1px;
+  top: 7px;
 }
 #MM-header .MM-header-grid .MM-header-grid-col3 p {
   font-family: "Avenir Black";
