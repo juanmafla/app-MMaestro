@@ -149,10 +149,10 @@
 }
 #MM-maestro-keyboard .MM-maestro-keyboard-main .MM-maestro-keyboard-main-control-range input[type=range] {
   height: 12px;
-  -webkit-appearance: none;
   margin: 10px 0;
   width: 100%;
   background: transparent;
+  accent-color: #9D6F94;
   border: none;
 }
 #MM-maestro-keyboard .MM-maestro-keyboard-main .MM-maestro-keyboard-main-control-range input[type=range]:focus {

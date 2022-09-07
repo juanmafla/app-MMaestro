@@ -5,10 +5,14 @@ import Setting from './img/Setting.svg'
 
 
 
+
+
 function Header() {
     const [showResults, setShowResults] = React.useState(false);
     const onClick = () => setShowResults(true);
     const onMout = () => setShowResults(false);
+
+
 
     return (
         <header id="MM-header">
@@ -30,7 +34,7 @@ function Header() {
                     </div>
                     <div>
                         <p>PAN</p>
-                        <input type="range" />
+                        <input type="range" id="myrange"/>
                     </div>
                     <div>
                         <p>TUNE</p>

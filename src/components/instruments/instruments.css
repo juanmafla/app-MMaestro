@@ -37,3 +37,9 @@
   max-width: 478px;
   height: auto;
 }
+#Mm-instruments .Mm-instruments-instruments svg.graygraph path {
+  opacity: 0.2;
+}
+#Mm-instruments .Mm-instruments-instruments svg.graygraph path.lighthere {
+  opacity: 1;
+}
